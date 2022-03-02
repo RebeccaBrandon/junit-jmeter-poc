@@ -18,7 +18,7 @@ public class Steps {
 	}
 	
 	@Given("I load the JMeter Junit Sampler page")
-	public void i_open_a_browser() throws InterruptedException {
+	public void i_open_a_browser() {
 		
 		jMeterHomePage.goToUrl(appConfig.getSetting("jmeterJUnitPageUrl"));
 		jMeterHomePage.waitForLoad();
